@@ -1,4 +1,4 @@
-=== ABDUL Widget version 0.12 ===
+=== ABDUL Widget version 0.1.2 ===
 Contributors: chatter bot, information broker
 Tags:  widget, abdul,information,chatter bot, WordPress.com
 Stable tag: trunk
