@@ -1,4 +1,4 @@
-=== ABDUL Widget ===
+=== ABDUL Widget version 0.1 ===
 Contributors: chatter bot, information broker
 Tags:  widget, abdul,information,chatter bot, WordPress.com
 Stable tag: trunk
@@ -6,7 +6,9 @@ Requires at least: 2.8
 Tested up to: 3.0
 
 == Description ==
-ABDUL is an Information broker system providing any real-time information which user want to know, such as exchange rate, gold price, oil price, forecast and traffic information
+ABDUL is Thai Chatter Bot providing any information from internet. 
+He works as an information broker.
+To ask him for everything you want to know
 
 == Installation ==
 1. download the file
@@ -14,7 +16,7 @@ ABDUL is an Information broker system providing any real-time information which 
 3. enable this plugin
 
 == Frequently Asked Questions ==
-nothing now
+coming soon
 
 == Changelog ==
 -simple request to abdul server for every questions
