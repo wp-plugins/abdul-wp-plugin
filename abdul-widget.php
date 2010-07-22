@@ -3,9 +3,9 @@
 Plugin Name: ABDUL Widget
 Plugin URI: http://wordpress.org/extend/plugins/abdul-wp-plugin/
 Description: Chat with ABDUL
-Version: 0.1
+Version: 0.1.2
 Author: DreamBuilder Inc.
-Author URI: http://conan.in.th/
+Author URI: http://www.conan.in.th/
 */
 
 
