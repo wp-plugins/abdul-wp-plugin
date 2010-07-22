@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: ABDUL Widget
-Plugin URI: http://wordpress.org/extend/plugins/abdul-wp-plugin
+Plugin URI: http://wordpress.org/extend/plugins/abdul-wp-plugin/
 Description: Chat with ABDUL
 Version: 0.1
 Author: DreamBuilder Inc.
