@@ -1,7 +1,7 @@
 var handleEvent = {
 	start:function(eventType, args){
 	// do something when startEvent fires.
-	document.getElementById('abdulanswer').innerHTML = "<center><img src=/wp-content/plugins/abdul-widget/images/wait.gif></center>";
+	document.getElementById('abdulanswer').innerHTML = "<center><img src=/wp-content/plugins/abdul-wp-plugin/images/wait.gif></center>";
 	},
 
 	complete:function(eventType, args){
@@ -43,7 +43,7 @@ var callback = {
 function makeRequest(){
 	var q = encodeURIComponent(document.getElementById("q").value);
 	if(q!=""){
-		var sUrl = "/wp-content/plugins/abdul-widget/abdul.php";
+		var sUrl = "/wp-content/plugins/abdul-wp-plugin/abdul.php";
 		var data = "q="+q;
 		var request = YAHOO.util.Connect.asyncRequest('POST', sUrl, callback,data);
 	}

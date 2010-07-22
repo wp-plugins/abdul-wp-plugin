@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: ABDUL Widget
-Plugin URI: http://wordpress.org/extend/plugins/abdul-widget
+Plugin URI: http://wordpress.org/extend/plugins/abdul-wp-plugin
 Description: Chat with ABDUL
 Version: 0.1
 Author: DreamBuilder Inc.
@@ -26,15 +26,15 @@ class ABDUL_Widget extends WP_Widget {
 	function widget( $args, $instance ) {
 		
 		$title = apply_filters('widget_title', $instance['title']);
-		if ( empty($title) ) $title = __( 'Twitter Updates' );
+		if ( empty($title) ) $title = __( 'Chat to ABDUL' );
 
 
 ?>
 
-<script type="text/javascript" src="/wp-content/plugins/abdul-widget/yui/yahoo/yahoo-min.js"></script> 
-<script type="text/javascript" src="/wp-content/plugins/abdul-widget/yui/event/event-min.js"></script> 
-<script type="text/javascript" src="/wp-content/plugins/abdul-widget/yui/connection/connection-min.js"></script> 
-<script type="text/javascript" src="/wp-content/plugins/abdul-widget/js/abdul.js"></script> 
+<script type="text/javascript" src="/wp-content/plugins/abdul-wp-plugin/yui/yahoo/yahoo-min.js"></script> 
+<script type="text/javascript" src="/wp-content/plugins/abdul-wp-plugin/yui/event/event-min.js"></script> 
+<script type="text/javascript" src="/wp-content/plugins/abdul-wp-plugin/yui/connection/connection-min.js"></script> 
+<script type="text/javascript" src="/wp-content/plugins/abdul-wp-plugin/js/abdul.js"></script> 
 
 <br /><br/>
 <center>
