@@ -99,7 +99,7 @@ var handleEvent = {
 	function makeRequest(){
 		var q = encodeURIComponent(document.getElementById("q").value);
 		if(q!=""){
-			var sUrl = <?php echo WP_PLUGIN_URL;?>"/abdul-wp-plugin/abdul.php";
+			var sUrl = "<?php echo WP_PLUGIN_URL;?>/abdul-wp-plugin/abdul.php";
 			var data = "q="+q;
 			var request = YAHOO.util.Connect.asyncRequest('POST', sUrl, callback,data);
 		}
@@ -140,7 +140,7 @@ var handleEvent = {
             <label for="<?php echo $this->get_field_id('title'); ?>"><?php echo 'Title:'; ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $instance['title']; ?>" />
         </p>
-        <?php
+     <?php
     }
 
 }
