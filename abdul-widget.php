@@ -38,16 +38,14 @@ class ABDUL_Widget extends WP_Widget {
 
 <br /><br/>
 <center>
-<h2>คุยกับอับดุล</h2>
+<h2><a href=http://www.abdul.in.th target=blank>คุยกับอับดุล</a></h2>
 
 <form id="abdul" name="abdul" onSubmit="return false;">
 <input type="text" name="q" id="q" onKeyPress="javascript:myquery(event);" size="20">
 <input type="hidden" name="from" id="from" value="wb:widget">
 <input type="hidden" name="bot" id="bot" value="abdul">
 </form> 
-
-<br /><br/>
-
+<br/>
 <table border="0" style="border:0px">
 <tr style="border:none" align="left"><td width="90%" align="left" style="border:none">
 <span id="abdulanswer" style="border:0px"></span>
