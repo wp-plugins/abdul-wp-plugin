@@ -1,7 +1,7 @@
 === ABDUL Widget ===
 Contributors: Guangming Sangkeettrakarn
 Tags:  widget, abdul,information,information broker,chatter bot, WordPress.com
-Stable tag: 0.1.3.3
+Stable tag: 0.1.3.4
 Requires at least: 2.8
 Tested up to: 3.0
 
