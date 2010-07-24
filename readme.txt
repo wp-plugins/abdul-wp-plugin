@@ -29,7 +29,13 @@ To ask him for everything you want to know
 - รอบหนัง
 - QR Encoder
 
-== Services ==
+
+== Installation ==
+1. download the file
+2. install to your system
+3. enable this plugin
+
+== Frequently Asked Questions ==
 ตัวอย่างการใช้งาน
 
 - สืบค้นข่าว
@@ -117,14 +123,6 @@ AED
 
 - สร้าง QR Code
 > qr  [ข้อความ]
-
-== Installation ==
-1. download the file
-2. install to your system
-3. enable this plugin
-
-== Frequently Asked Questions ==
-coming soon
 
 == Changelog ==
 0.1
