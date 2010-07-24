@@ -1,6 +1,6 @@
 === ABDUL Widget ===
 Contributors: chatter bot, information broker
-Tags:  widget, abdul,information,chatter bot, WordPress.com
+Tags:  widget, abdul,information,information broker,chatter bot, WordPress.com
 Stable tag: 0.1.3.1
 Requires at least: 2.8
 Tested up to: 3.0
