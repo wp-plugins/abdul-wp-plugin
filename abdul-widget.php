@@ -25,21 +25,20 @@ class ABDUL_Widget extends WP_Widget {
 
 	function widget( $args, $instance ) {
 		
-		$title = apply_filters('widget_title', $instance['title']);
-		if ( empty($title) ) $title = __( 'Chat to ABDUL' );
+        extract( $args );
+        echo $before_widget;
+        $title = apply_filters('widget_title', $instance['title']);
+        if( $title ) echo $before_title . $title . $after_title;
 
 
 ?>
 
-<script type="text/javascript" src="/wp-content/plugins/abdul-wp-plugin/yui/yahoo/yahoo-min.js"></script> 
-<script type="text/javascript" src="/wp-content/plugins/abdul-wp-plugin/yui/event/event-min.js"></script> 
-<script type="text/javascript" src="/wp-content/plugins/abdul-wp-plugin/yui/connection/connection-min.js"></script> 
-<script type="text/javascript" src="/wp-content/plugins/abdul-wp-plugin/js/abdul.js"></script> 
+<script type="text/javascript" src="<?php echo WP_PLUGIN_URL;?>/abdul-wp-plugin/yui/yahoo/yahoo-min.js"></script> 
+<script type="text/javascript" src="<?php echo WP_PLUGIN_URL;?>/abdul-wp-plugin/yui/event/event-min.js"></script> 
+<script type="text/javascript" src="<?php echo WP_PLUGIN_URL;?>/abdul-wp-plugin/yui/connection/connection-min.js"></script> 
 
 <br /><br/>
 <center>
-<h2><a href=http://www.abdul.in.th target=blank>คุยกับอับดุล</a></h2>
-
 <form id="abdul" name="abdul" onSubmit="return false;">
 <input type="text" name="q" id="q" onKeyPress="javascript:myquery(event);" size="20">
 <input type="hidden" name="from" id="from" value="wb:widget">
@@ -54,15 +53,95 @@ class ABDUL_Widget extends WP_Widget {
 </center>
 
 
+<script>
+var handleEvent = {
+		start:function(eventType, args){
+		// do something when startEvent fires.
+		document.getElementById('abdulanswer').innerHTML = "<center><img src=<?php echo WP_PLUGIN_URL;?>/abdul-wp-plugin/images/wait.gif></center>";
+		},
+
+		complete:function(eventType, args){
+		// do something when completeEvent fires.
+			document.abdul.q.select();
+		},
+
+		success:function(eventType, args){
+		// do something when successEvent fires.
+			if(args[0].responseText !== undefined){
+				document.getElementById('abdulanswer').innerHTML = args[0].responseText;
+				document.abdul.q.select();
+			}
+		},
+
+		failure:function(eventType, args){
+		// do something when failureEvent fires.
+			alert('answering system error');
+		},
+
+		abort:function(eventType, args){
+		// do something when abortEvent fires.
+		}
+	};
+
+	var callback = {
+		customevents:{
+			onStart:handleEvent.start,
+			onComplete:handleEvent.complete,
+			onSuccess:handleEvent.success,
+			onFailure:handleEvent.failure,
+			onAbort:handleEvent.abort
+		},
+		scope:handleEvent,
+	 	argument:["foo","bar","baz"]
+	};
+
+
+	function makeRequest(){
+		var q = encodeURIComponent(document.getElementById("q").value);
+		if(q!=""){
+			var sUrl = <?php echo WP_PLUGIN_URL;?>"/abdul-wp-plugin/abdul.php";
+			var data = "q="+q;
+			var request = YAHOO.util.Connect.asyncRequest('POST', sUrl, callback,data);
+		}
+	}
+
+	function myquery(e){
+		var n = e.keyCode;
+		if(n==13){//key of Enter Key
+			makeRequest();
+			document.abdul.q.select();
+		}
+		
+	}
+</script>
+
+
 <?php
 		
 		
 		
 	}
 
-	function update( $new_instance, $old_instance ) {
+    //////////////////////////////////////////////////////
+    //Update the widget settings
+    function update( $new_instance, $old_instance )
+    {
+        $instance = $old_instance;
+        $instance['title'] = $new_instance['title'];
+        return $instance;
+    }
 
-	}
+    ////////////////////////////////////////////////////
+    //Display the widget settings on the widgets admin panel
+    function form( $instance )
+    {
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php echo 'Title:'; ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $instance['title']; ?>" />
+        </p>
+        <?php
+    }
 
 }
 

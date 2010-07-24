@@ -1,7 +1,7 @@
 === ABDUL Widget ===
 Contributors: Guangming Sangkeettrakarn
 Tags:  widget, abdul,information,information broker,chatter bot, WordPress.com
-Stable tag: 0.1.3.1
+Stable tag: 0.1.3.2
 Requires at least: 2.8
 Tested up to: 3.0
 
@@ -42,8 +42,7 @@ To ask him for everything you want to know
 > ข่าว
 
 - แปลศัพท์ 
-> dict dog
-> ดิก ต้นไม้
+> dict dog, ดิก ต้นไม้
 
 - แปลข้อความ
 >trans i love you
@@ -58,65 +57,62 @@ To ask him for everything you want to know
 > 123*4^2
 
 - ตรวจผลสลากกินแบ่งฯ
->หวย
->ตรวจหวย 123456
+>หวย, ตรวจหวย 123456
 
 - ราคาน้ำมัน
 
 - ราคาทอง
 
 - ดัชนีตลาดหลักทรัพย์ ( realtime )
->หุ้น
->หุ้น กสิกร
->หุ้น PTT
+>หุ้น,
+หุ้น กสิกร,
+หุ้น PTT
 
 - อัตราแลกเปลี่ยน
 > ค่าเงิน, ค่าเงินบาท
 
 - แปลงค่าอัตราแลกเปลี่ยน
-> 1000 eur (*)
-> 1000 usd jpy  (**)
+> 1000 eur (*), 1000 usd jpy  (**)
 
-*เทียบกับเงินบาท
-** สกุลเงิน
-THB = ไทย ( บาท )
-RUB
-SEK = สวีเดน
-KES
-BND
-PHP = ฟิลิปปินส์ ( เปโซ )
-NZD
-KWD
-IDR
-PKR
-LAK
-GBP  = สหราชอาณาจักร (ปอนด์สเตอร์ลิง)
-KHR = กัมพูชา (เรียล)
-CZK
-JPY  = ญี่ปุ่น
-BDT
-PLN
-SGD  = สิงคโปร์ (ดอลลาร์)
-AUD = ออสเตรเลีย (ดอลลาร์)
-KRW = เกาหลี (วอน)
-CNY = จีน (หยวน)
-EGP
-INR  = อินเดีย
-VND = เวียดนาม (ด็อง)
-ZAR
-MMK = พม่า 
-NOK = นอร์เวย์
-USD = สหรัฐอเมริกา (ดอลลาร์)
-MYR = มาเลเซีย (ริงกิต)
-CAD = แคนาดา
+*เทียบกับเงินบาท, ** สกุลเงิน
+>THB = ไทย ( บาท ),
+RUB,
+SEK = สวีเดน,
+KES,
+BND,
+PHP = ฟิลิปปินส์ ( เปโซ ),
+NZD,
+KWD,
+IDR,
+PKR,
+LAK,
+GBP  = สหราชอาณาจักร (ปอนด์สเตอร์ลิง),
+KHR = กัมพูชา (เรียล),
+CZK,
+JPY  = ญี่ปุ่น,
+BDT,
+PLN,
+SGD  = สิงคโปร์ (ดอลลาร์),
+AUD = ออสเตรเลีย (ดอลลาร์),
+KRW = เกาหลี (วอน),
+CNY = จีน (หยวน),
+EGP,
+INR  = อินเดีย,
+VND = เวียดนาม (ด็อง),
+ZAR,
+MMK = พม่า ,
+NOK = นอร์เวย์,
+USD = สหรัฐอเมริกา (ดอลลาร์),
+MYR = มาเลเซีย (ริงกิต),
+CAD = แคนาดา,
 DKK  = เดนมาร์ก
-SAR
-MXN
-EUR  = ยูโร
-HKD = ฮ่องกง (ดอลลาร์)
-CHF
-TWD
-AED
+SAR,
+MXN,
+EUR  = ยูโร,
+HKD = ฮ่องกง (ดอลลาร์),
+CHF,
+TWD,
+AED,
 
 - รอบหนัง
 > รอบหนัง [ชื่อเรื่อง/ชื่อสถานที่]
