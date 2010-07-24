@@ -43,7 +43,7 @@ var callback = {
 function makeRequest(){
 	var q = encodeURIComponent(document.getElementById("q").value);
 	if(q!=""){
-		var sUrl = "/wp-content/plugins/abdul-wp-plugin/abdul.php";
+		var sUrl = "/wp-content/plugins/qr-encoder/abdul.php";
 		var data = "q="+q;
 		var request = YAHOO.util.Connect.asyncRequest('POST', sUrl, callback,data);
 	}
