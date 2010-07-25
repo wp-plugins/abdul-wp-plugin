@@ -52,7 +52,6 @@ class ABDUL_Widget extends WP_Widget {
 
 </center>
 
-
 <script>
 var handleEvent = {
 		start:function(eventType, args){
@@ -117,9 +116,7 @@ var handleEvent = {
 
 
 <?php
-		
-		
-		
+			
 	}
 
     //////////////////////////////////////////////////////
@@ -140,7 +137,8 @@ var handleEvent = {
             <label for="<?php echo $this->get_field_id('title'); ?>"><?php echo 'Title:'; ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $instance['title']; ?>" />
         </p>
-     <?php
+
+<?php
     }
 
 }
